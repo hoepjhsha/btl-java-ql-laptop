@@ -13,7 +13,14 @@ import java.sql.*;
 public class ConnectDB {
     
     public static Connection getConnection() {
-        final String url = "jdbc:sqlserver://DESKTOP-42IL4C3:1433;databaseName=btl_java_quanlynhadat;encrypt=true;trustServerCertificate=true;user=sa;password=123";
+        final String username = "sa";
+        final String password = "123";
+        
+        final String url = "jdbc:sqlserver://DESKTOP-42IL4C3:1433;"
+                + "databaseName=btl_java_quanlynhadat;"
+                + "encrypt=true;trustServerCertificate=true;"
+                + "user=" + username 
+                + ";password=" + password;
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             System.out.println("Connect database success!");

@@ -4,9 +4,6 @@
  */
 package ql_laptop;
 
-import java.sql.*;
-import static Connections.ConnectDB.getConnection;
-
 /**
  *
  * @author hoep
@@ -17,7 +14,7 @@ public class QL_LAPTOP {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+
     }
     
 }
