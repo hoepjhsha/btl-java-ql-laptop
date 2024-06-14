@@ -4,6 +4,9 @@
  */
 package ql_laptop;
 
+import java.sql.*;
+import static Connections.ConnectDB.getConnection;
+
 /**
  *
  * @author hoep
